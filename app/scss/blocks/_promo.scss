@@ -21,17 +21,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 270px;
+    width: 280px;
   }
   &__link {
     color: #000;
     font-weight: bold;
     &:hover {
-      height: 45px;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
       background: $main-color;
-      padding: 12px 26px;
-      border-radius: 5px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     }
   }
 }
+
+
