@@ -16,11 +16,17 @@
       grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 200px);
     }
   }
+  .resume {
+    &__inner {
+      padding: 60px 40px 0 65px;
+      grid-template-columns: repeat(2, 350px);
+    }
+  }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 720px;
+    max-width: 730px;
   }
   .title {
     &_fz48 {
@@ -46,6 +52,15 @@
   }
   .title_fz36 {
     font-size: 25px;
+  }
+  .resume {
+    &__column {
+      margin-bottom: 40px;
+    }
+    &__inner {
+      padding: 60px 30px 0 30px;
+      grid-template-columns: repeat(1, 600px);
+    }
   }
 }
 
@@ -79,6 +94,11 @@
       }
     }
   }
+  .resume {
+    &__inner {
+      grid-template-columns: repeat(1, 500px);
+    }
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -102,10 +122,18 @@
   .about {
     &__skills {
       grid-template-columns: 350px;
+      justify-content: center;
       &-item {
         grid-template-columns: 250px;
         padding-left: 60px;
       }
+    }
+  }
+  .resume {
+    &__inner {
+      grid-template-columns: repeat(1, 300px);
+      justify-content: center;
+      padding: 60px 15px 0 15px;
     }
   }
 }
@@ -140,6 +168,12 @@
         grid-template-columns: 225px;
         padding-left: 40px;
       }
+    }
+  }
+  .resume {
+    &__inner {
+      grid-template-columns: repeat(1, 270px);
+      
     }
   }
 }
