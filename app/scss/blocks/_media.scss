@@ -27,6 +27,16 @@
       grid-template-columns: repeat(2, 270px);
       justify-content: center;
     }
+    &__ratings {
+      grid-template: repeat(2, minmax(70px, auto)) / repeat(2, 350px);
+      justify-content: center;
+      &-title {
+        padding: 2px 0 23px 13px;
+        &::before {
+          top: -16%;
+        }
+      }
+    }
   }
 }
 
@@ -103,6 +113,11 @@
   .resume {
     &__inner {
       grid-template-columns: repeat(1, 500px);
+    }
+  }
+  .skills {
+    &__ratings {
+      grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 350px);
     }
   }
 }
@@ -189,6 +204,15 @@
   .skills {
     &__subtitle {
       font-size: 22px;
+    }
+    &__ratings {
+      grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 310px);
+      &-item{
+        justify-content: space-around;
+      }
+      &-line{
+        width: 290px;
+      }
     }
   }
 }
