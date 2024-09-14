@@ -22,6 +22,12 @@
       grid-template-columns: repeat(2, 350px);
     }
   }
+  .skills {
+    &__inner {
+      grid-template-columns: repeat(2, 270px);
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -136,6 +142,11 @@
       padding: 60px 15px 0 15px;
     }
   }
+  .skills {
+    &__inner {
+      grid-template-columns: repeat(1, 270px);
+    }
+  }
 }
 
 @media (max-width: 376px) {
@@ -173,7 +184,11 @@
   .resume {
     &__inner {
       grid-template-columns: repeat(1, 270px);
-      
+    }
+  }
+  .skills {
+    &__subtitle {
+      font-size: 22px;
     }
   }
 }
