@@ -24,7 +24,7 @@
   }
   .skills {
     &__inner {
-      grid-template-columns: repeat(2, 270px);
+      grid-template-columns: repeat(3, 270px);
       justify-content: center;
     }
     &__ratings {
@@ -35,6 +35,18 @@
         &::before {
           top: -16%;
         }
+      }
+    }
+  }
+  .portfolio {
+    &__inner {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: center;
+      .horizontal,
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
       }
     }
   }
@@ -78,6 +90,16 @@
       grid-template-columns: repeat(1, 600px);
     }
   }
+  .skills {
+    &__inner {
+      grid-template-columns: repeat(2, 270px);
+    }
+  }
+  .portfolio {
+    &__inner {
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -118,6 +140,11 @@
   .skills {
     &__ratings {
       grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 350px);
+    }
+  }
+  .portfolio {
+    &__inner {
+      gap: 20px;
     }
   }
 }
@@ -172,7 +199,7 @@
   }
   .promo {
     &__title {
-      width: 300px;
+      width: 290px;
       line-height: 34px;
     }
   }
@@ -197,27 +224,33 @@
     }
   }
   .resume {
+    padding-top: 60px;
     &__inner {
       grid-template-columns: repeat(1, 270px);
     }
   }
   .skills {
+    padding-top: 60px;
     &__subtitle {
       font-size: 22px;
     }
     &__ratings {
       grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 310px);
-      &-item{
+      margin-top: 60px;
+      &-item {
         justify-content: space-around;
       }
-      &-line{
+      &-line {
         width: 290px;
       }
     }
   }
+  .portfolio {
+    padding-top: 60px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
   .menu {
     &__block {
       width: 250px;
